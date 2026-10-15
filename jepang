@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Watashi no Kazoku 🌿</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f5ed;
+    color: #405447;
+}
+
+header {
+    background: #dce9d9;
+    padding: 25px 10px;
+    text-align: center;
+}
+
+header h1 {
+    color: #46664f;
+    margin-bottom: 8px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: #46664f;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b47c69;
+}
+
+.hero {
+    text-align: center;
+    padding: 45px 20px;
+    background: #e8efe3;
+}
+
+.hero h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    line-height: 1.8;
+}
+
+.tombol {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: #65836a;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+section {
+    padding: 35px 15px;
+    scroll-margin-top: 15px;
+}
+
+.judul {
+    text-align: center;
+    color: #54765b;
+    margin-bottom: 10px;
+}
+
+.deskripsi {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.keluarga {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.kartu {
+    width: 165px;
+    padding: 12px;
+    background: white;
+    text-align: center;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px #00000012;
+    transition: transform 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+}
+
+.kartu img {
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.kartu h3 {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.kartu p {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #788479;
+}
+
+/* Kartu ayah dan ibu */
+.orangtua {
+    width: 348px;
+}
+
+.orangtua img {
+    height: 190px;
+    object-fit: cover;
+    object-position: center;
+}
+
+#perkenalan {
+    background: #edf1e7;
+}
+
+.isi {
+    max-width: 600px;
+    padding: 22px;
+    margin: auto;
+    background: white;
+    border-radius: 16px;
+    line-height: 1.9;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #dce9d9;
+    font-size: 13px;
+}
+
+@media (max-width: 380px) {
+    .kartu {
+        width: 145px;
+    }
+
+    .orangtua {
+        width: 100%;
+        max-width: 320px;
+    }
+
+    .orangtua img {
+        height: 180px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌿 Watashi no Kazoku 🌿</h1>
+    <p>わたしのかぞく — Keluargaku</p>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#anggota">Keluargaku</a>
+    <a href="#perkenalan">Perkenalan</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>ようこそ！</h2>
+    <p>Selamat datang di website keluarga saya.</p>
+    <p>Watashi wa kazoku ga daisuki desu ♡</p>
+    <p>Saya sangat menyayangi keluarga saya.</p>
+
+    <a href="#anggota" class="tombol">
+        Lihat Keluargaku ♡
+    </a>
+</div>
+
+<section id="anggota">
+    <h2 class="judul">🌸 Kazoku no Shoukai 🌸</h2>
+    <p class="deskripsi">Perkenalan Anggota Keluarga</p>
+
+    <div class="keluarga">
+
+        <!-- Ayah dan Ibu digabung -->
+        <div class="kartu orangtua">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\4FC25F179518AD02F0FE409D9D5A149CC7770402\transfers\2026-42\WhatsApp Image 2026-10-15 at 10.15.00.jpeg" alt="Ayah dan Ibu">
+            <h3>ちち と はは</h3>
+            <p>Chichi to Haha</p>
+            <p>Ayah dan Ibu</p>
+        </div>
+
+        <!-- Kakak laki-laki -->
+        <div class="kartu">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\4FC25F179518AD02F0FE409D9D5A149CC7770402\transfers\2026-42\WhatsApp Image 2026-10-15 at 10.14.12.jpeg">
+            <h3>あに</h3>
+            <p>Ani</p>
+            <p>Kakak laki-laki</p>
+        </div>
+
+        <!-- Saya -->
+        <div class="kartu">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\4FC25F179518AD02F0FE409D9D5A149CC7770402\transfers\2026-42\WhatsApp Image 2026-10-15 at 10.12.17.jpeg" alt="Foto saya">
+            <h3>わたし</h3>
+            <p>Watashi</p>
+            <p>Saya</p>
+        </div>
+
+        <!-- Adik perempuan -->
+        <div class="kartu">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\4FC25F179518AD02F0FE409D9D5A149CC7770402\transfers\2026-41\WhatsApp Image 2026-10-08 at 14.21.01.jpeg"
+                 alt="Adik perempuan">
+            <h3>いもうと</h3>
+            <p>Imouto</p>
+            <p>Adik perempuan</p>
+        </div>
+
+        <!-- Adik laki-laki -->
+        <div class="kartu">
+            <img src="c:\Users\HP\AppData\Local\Packages\5319275A.WhatsAppDesktop_cv1g1gvanyjgm\LocalState\sessions\4FC25F179518AD02F0FE409D9D5A149CC7770402\transfers\2026-42\WhatsApp Image 2026-10-15 at 10.16.03.jpeg"
+                 alt="Adik laki-laki">
+            <h3>おとうと</h3>
+            <p>Otouto</p>
+            <p>Adik laki-laki</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="perkenalan">
+
+    <section id="perkenalan">
+    <h2>♡ Watashi no Kazoku ♡</h2>
+
+    <div class="cerita">
+        <p>Kore wa watashi no kazoku desu.</p>
+
+        <p>Watashi no kazoku wa roku nin desu.</p>
+
+        <p>Watashi to chichi to haha to ani to
+        imouto to otouto desu.</p>
+
+        <p>Watashi wa yonin kyoudai desu.</p>
+
+        <p>Ani to imouto to otouto desu.</p>
+
+        <p>Watashi wa mannaka desu.</p>
+    </div>
+</section>
+
+<style>
+    .cerita {
+        background-color: #e8f5e9;
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 600px;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 1.8;
+    }
+
+    #perkenalan h2 {
+        text-align: center;
+        color: #386641;
+    }
+</style>
+</section>
+    
+   <!-- CERITA KELUARGAKU -->
+<section class="keluarga" id="cerita">
+
+    <h2 style="margin-bottom: 25px;">
+        わたしの かぞく ♡
+    </h2>
+
+    <div class="cerita">
+
+        <div class="jepang">
+            <p>これは わたしの かぞくです。</p>
+            <p>わたしの かぞくは ろくにんです。</p>
+            <p>わたしと ちちと ははと あにと いもうとと おとうとです。</p>
+            <p>わたしは よにん きょうだいです。</p>
+            <p>あにと わたしと いもうとと おとうとです。</p>
+            <p>わたしは まんなかです。</p>
+        </div>
+
+        <hr style="margin: 20px 0; border: 1px solid #ead0d0;">
+
+        <div class="arti">
+            <p>Ini adalah keluarga saya.</p>
+            <p>Keluarga saya terdiri dari enam orang.</p>
+            <p>Yaitu saya, ayah, ibu, kakak laki-laki,
+            adik perempuan, dan adik laki-laki.</p>
+            <p>Saya bersaudara empat orang.</p>
+            <p>Yaitu kakak laki-laki, saya,
+            adik perempuan, dan adik laki-laki.</p>
+            <p>Saya adalah anak tengah.</p>
+        </div>
+
+    </div>
+
+</section>
+</section>
+
+    <footer>
+    <p>ありがとう ♡ Arigatou Gozaimasu</p>
+    <p>Terima kasih sudah mengunjungi website saya.</p>
+</footer>
+</section>
+</body>
+</html>
